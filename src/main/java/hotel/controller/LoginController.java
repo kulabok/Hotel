@@ -17,9 +17,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpSession;
 
-/**
- * Created by kulabok on 12.06.2016.
- */
 @Controller
 public class LoginController {
     @Autowired

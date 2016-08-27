@@ -5,9 +5,6 @@ import hotel.entity.User;
 
 import java.util.List;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 public interface RequestServiceDao {
     boolean exist(int id);
     Request add(Request request);

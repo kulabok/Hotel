@@ -14,9 +14,6 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 @Service
 public class RoomServiceDaoImpl implements RoomServiceDao {
     @Autowired

@@ -4,9 +4,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 @Entity
 @Table(name = "user")
 public class User {

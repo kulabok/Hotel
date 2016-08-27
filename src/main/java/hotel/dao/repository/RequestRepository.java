@@ -10,9 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 public interface RequestRepository extends JpaRepository<Request, Integer> {
 
     @Query("select r from Request r where r.user.id = :id and r.processed = false")

@@ -4,9 +4,6 @@ import hotel.entity.Bill;
 
 import java.util.List;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 public interface BillServiceDao {
     boolean exist(int id);
     Bill add(Bill bill);

@@ -10,9 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-/**
- * Created by kulabok on 12.06.2016.
- */
 @Controller
 public class RegistrationController {
     @Autowired
@@ -48,21 +45,4 @@ public class RegistrationController {
             return mv;
         }
     }
-
-    /*@RequestMapping(value = "/Register", method = RequestMethod.POST)
-    public String register (
-            @Param("fullname") String fullName,
-            @Param("login") String login,
-            @Param("password") String password){
-        User user = new User();
-        user.setFullName(fullName);
-        user.setLogin(login);
-        user.setPassword(password);
-        user.setAdmin(false);
-        if (userDao.add(user)!=null){
-            return "userCabinet";
-        } else {
-            return "error";
-        }
-    }*/
 }

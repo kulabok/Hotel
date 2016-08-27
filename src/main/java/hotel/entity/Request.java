@@ -6,9 +6,6 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.sql.Date;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 @Entity
 @Table(name = "request")
 public class Request {
@@ -16,7 +13,7 @@ public class Request {
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name= "increment", strategy= "increment")
     private int id;
-    @ManyToOne (cascade = {CascadeType.ALL})
+    @ManyToOne (cascade = {CascadeType.ALL}, fetch = FetchType.LAZY)
     @JoinColumn(name = "user")
     private User user;
     @Column(name = "roomclass", nullable = false)

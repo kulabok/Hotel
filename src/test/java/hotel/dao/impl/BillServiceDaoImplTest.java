@@ -10,7 +10,7 @@ import hotel.entity.Request;
 import hotel.entity.Room;
 import hotel.entity.User;
 import hotel.entity.enums.RoomClass;
-import org.junit.After;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

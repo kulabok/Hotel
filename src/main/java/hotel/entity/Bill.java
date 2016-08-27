@@ -4,9 +4,6 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 @Entity
 @Table(name = "bill")
 public class Bill {
@@ -14,7 +11,7 @@ public class Bill {
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name= "increment", strategy= "increment")
     private int id;
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "request")
     private Request request;
     @OneToOne

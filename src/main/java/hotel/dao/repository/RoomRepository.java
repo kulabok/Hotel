@@ -8,9 +8,6 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 public interface RoomRepository extends JpaRepository<Room, Integer> {
 
     @Query("SELECT r FROM Room r WHERE r.roomclass = :roomclass AND r.available >= :available")

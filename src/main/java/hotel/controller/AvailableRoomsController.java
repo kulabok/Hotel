@@ -18,9 +18,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
-/**
- * Created by kulabok on 17.06.2016.
- */
 @Controller
 @SessionAttributes("user")
 public class AvailableRoomsController {

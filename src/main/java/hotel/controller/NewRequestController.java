@@ -2,7 +2,6 @@ package hotel.controller;
 
 import hotel.dao.impl.BillServiceDaoImpl;
 import hotel.dao.impl.RequestServiceDaoImpl;
-import hotel.dao.impl.RoomServiceDaoImpl;
 import hotel.entity.Request;
 import hotel.entity.User;
 import hotel.entity.enums.RoomClass;
@@ -18,9 +17,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpSession;
 import java.sql.Date;
 
-/**
- * Created by kulabok on 12.06.2016.
- */
 @Controller
 @SessionAttributes({"user"})
 public class NewRequestController {

@@ -4,9 +4,6 @@ import hotel.entity.enums.RoomClass;
 
 import javax.persistence.*;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 @Entity
 @Table(name = "room")
 public class Room {

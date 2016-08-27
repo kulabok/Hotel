@@ -9,9 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by kulabok on 06.05.2016.
- */
 public interface BillRepository extends JpaRepository<Bill, Integer> {
 
     @Query("select b from Bill b where b.request.user.id = :id and b.paid = false")
